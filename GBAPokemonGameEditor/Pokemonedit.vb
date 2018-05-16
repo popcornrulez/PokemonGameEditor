@@ -3986,4 +3986,19 @@ Public Class Pokemonedit
     Private Sub EvoItemPic_Click(sender As Object, e As EventArgs) Handles EvoItemPic.Click
 
     End Sub
+
+    Private Sub NextPKM_Click(sender As Object, e As EventArgs) Handles NextPKM.Click
+        Dim Num As Integer
+        Num = PKMNames.Items.Count - 1
+        If (PKMNames.SelectedIndex < Num) Then
+            PKMNames.SelectedIndex = PKMNames.SelectedIndex + 1
+        End If
+
+    End Sub
+
+    Private Sub PreviousPKM_Click(sender As Object, e As EventArgs) Handles PreviousPKM.Click
+        If (PKMNames.SelectedIndex > 0) Then
+            PKMNames.SelectedIndex = PKMNames.SelectedIndex - 1
+        End If
+    End Sub
 End Class

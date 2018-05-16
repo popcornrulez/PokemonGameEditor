@@ -831,7 +831,7 @@ Me.Cursor = Cursors.Arrow
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         Me.Cursor = Cursors.WaitCursor
         TradeEditor.Show()
-tradereditor.focus()        
+tradeeditor.focus()        
 Me.Cursor = Cursors.Arrow
     End Sub
 
